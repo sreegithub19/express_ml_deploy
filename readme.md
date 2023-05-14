@@ -22,4 +22,4 @@ The primary purpose of the MobileNet model is to provide an efficient solution f
 
 ![Image 2](examples/screenshot2.png)
 
-- git add .
+- git add . && git commit -m "c" && git push origin master && vercel --prod
