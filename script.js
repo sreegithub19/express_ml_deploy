@@ -1,15 +1,15 @@
-var express = require("express");
-var fs = require('fs');
-var sys = require('sys');
-var path = require('path');
+const path = require('path');
+const express = require("express");
+const app = express();
+app.use(express.static("public"));
 
-var app = express();
-    app.set("view options", {layout: false});
-    app.use(express.static(path.join(__dirname, 'public')));
+app.get('/', (req, res) => {
+    res.sendFile('index.html', {root: path.join(__dirname, 'public')});
+})
 
-app.get('/', function(req, res){
-    res.sendFile('index.html',{ root: './public' });
-});
 
-app.listen(8080);
-console.log('Express server started');
+app.listen(process.env.PORT || 8080, 
+	() => console.log("Server is running..."));
+//open('http://localhost:3000');
+
+module.exports = app
