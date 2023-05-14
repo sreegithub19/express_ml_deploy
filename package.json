@@ -1,8 +1,11 @@
 {
   "name": "express_ml_deploy",
   "version": "1.0.0",
-  "description": "- git add . && git commit -m \"c\" && git push https://github.com/sreegithub19/express_ml_deploy.git master - git add . && git commit -m \"c\" && git push origin master",
-  "main": "index.js",
+  "description": "The MobileNet model is a convolutional neural network (CNN) designed for efficient image classification tasks, particularly on mobile and embedded devices.",
+  "main": "script.js",
+  "directories": {
+    "example": "examples"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +20,6 @@
   },
   "homepage": "https://github.com/sreegithub19/express_ml_deploy#readme",
   "dependencies": {
-    "ejs": "^3.1.9",
-    "express": "^4.18.2"
+    "html": "^1.0.0"
   }
 }
